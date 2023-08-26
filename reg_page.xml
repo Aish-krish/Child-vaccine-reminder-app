@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   tools:layout_editor_absoluteX="1dp"
+   tools:layout_editor_absoluteY="1dp"
+   android:fillViewport="true">
+
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/Loginpage"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:context=".Registration">
+
+
+       <TextView
+           android:id="@+id/textView15"
+           android:layout_width="134dp"
+           android:layout_height="39dp"
+           android:layout_marginStart="16dp"
+           android:layout_marginEnd="32dp"
+           android:text="Resident Facilty ID"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.855" />
+
+       <TextView
+           android:id="@+id/textView10"
+           android:layout_width="134dp"
+           android:layout_height="39dp"
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="32dp"
+           android:layout_marginBottom="90dp"
+           android:text="ChildDob"
+           app:layout_constraintBottom_toTopOf="@+id/newid"
+           app:layout_constraintEnd_toStartOf="@+id/rchid"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/textView5"
+           app:layout_constraintVertical_bias="0.736" />
+
+       <TextView
+           android:id="@+id/textView12"
+           android:layout_width="134dp"
+           android:layout_height="39dp"
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="32dp"
+           android:layout_marginEnd="32dp"
+           android:layout_marginBottom="120dp"
+           android:text="Child Name"
+           app:layout_constraintBottom_toTopOf="@+id/newid"
+           app:layout_constraintEnd_toStartOf="@+id/rchid"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/textView5"
+           app:layout_constraintVertical_bias="0.02" />
+
+       <TextView
+           android:id="@+id/textView9"
+           android:layout_width="134dp"
+           android:layout_height="39dp"
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="32dp"
+           android:layout_marginBottom="90dp"
+           android:text="Child's Sex"
+           app:layout_constraintBottom_toTopOf="@+id/newid"
+           app:layout_constraintEnd_toStartOf="@+id/rchid"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/textView5"
+           app:layout_constraintVertical_bias="0.609" />
+
+       <TextView
+           android:id="@+id/textView8"
+           android:layout_width="134dp"
+           android:layout_height="39dp"
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="32dp"
+           android:layout_marginBottom="90dp"
+           android:text="Enrollment Date"
+           app:layout_constraintBottom_toTopOf="@+id/newid"
+           app:layout_constraintEnd_toStartOf="@+id/rchid"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/textView5"
+           app:layout_constraintVertical_bias="0.482" />
+
+       <TextView
+           android:id="@+id/textView7"
+           android:layout_width="134dp"
+           android:layout_height="39dp"
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="32dp"
+           android:layout_marginBottom="24dp"
+           android:text="RCH ID of Mother"
+           app:layout_constraintBottom_toTopOf="@+id/newid"
+           app:layout_constraintEnd_toStartOf="@+id/rchid"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/textView5"
+           app:layout_constraintVertical_bias="0.176" />
+
+       <TextView
+           android:id="@+id/textView6"
+           android:layout_width="134dp"
+           android:layout_height="39dp"
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="32dp"
+           android:layout_marginBottom="80dp"
+           android:text="Mother's MbNo."
+           app:layout_constraintBottom_toTopOf="@+id/newid"
+           app:layout_constraintEnd_toStartOf="@+id/rchid"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/textView5"
+           app:layout_constraintVertical_bias="0.349" />
+
+       <TextView
+           android:id="@+id/textView5"
+           android:layout_width="134dp"
+           android:layout_height="39dp"
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="36dp"
+           android:layout_marginEnd="24dp"
+           android:layout_marginBottom="673dp"
+           android:text="RCH ID OF CHILD"
+           app:layout_constraintBottom_toTopOf="@+id/newid"
+           app:layout_constraintEnd_toStartOf="@+id/rchid"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/info"
+           app:layout_constraintVertical_bias="0.0" />
+
+       <TextView
+           android:id="@+id/textView3"
+           android:layout_width="134dp"
+           android:layout_height="39dp"
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="32dp"
+           android:layout_marginBottom="24dp"
+           android:text="Child Birth weight"
+           app:layout_constraintBottom_toTopOf="@+id/newid"
+           app:layout_constraintEnd_toStartOf="@+id/rchid"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/textView5"
+           app:layout_constraintVertical_bias="0.772" />
+
+       <TextView
+           android:id="@+id/info"
+           android:layout_width="251dp"
+           android:layout_height="27dp"
+           android:text="REGISTRATION PAGE"
+           android:textAlignment="center"
+           android:textColor="#3F51B5"
+           android:textSize="20sp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.497"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.033" />
+
+       <EditText
+           android:id="@+id/rchid"
+           android:layout_width="157dp"
+           android:layout_height="42dp"
+           android:ems="10"
+           android:hint="RCH ID of child"
+           android:inputType="textPersonName"
+           android:minHeight="48dp"
+           android:textAlignment="center"
+           android:textSize="14sp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="@+id/info"
+           app:layout_constraintHorizontal_bias="0.914"
+           app:layout_constraintStart_toStartOf="@+id/info"
+           app:layout_constraintTop_toBottomOf="@+id/info"
+           app:layout_constraintVertical_bias="0.031"
+           tools:ignore="TouchTargetSizeCheck" />
+
+       <EditText
+           android:id="@+id/childname"
+           android:layout_width="157dp"
+           android:layout_height="42dp"
+           android:layout_marginTop="25dp"
+           android:ems="10"
+           android:hint="Child Name"
+           android:inputType="textPersonName"
+           android:minHeight="48dp"
+           android:textAlignment="center"
+           android:textSize="14sp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="@+id/rchid"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="@+id/rchid"
+           app:layout_constraintTop_toBottomOf="@+id/rchid"
+           app:layout_constraintVertical_bias="0.016"
+           tools:ignore="TouchTargetSizeCheck" />
+
+       <EditText
+           android:id="@+id/rchmother"
+           android:layout_width="157dp"
+           android:layout_height="42dp"
+           android:layout_marginTop="25dp"
+           android:ems="10"
+           android:hint="RCH ID of mother"
+           android:inputType="textPersonName"
+           android:minHeight="48dp"
+           android:textAlignment="center"
+           android:textSize="14sp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="@+id/childname"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="@+id/childname"
+           app:layout_constraintTop_toBottomOf="@+id/childname"
+           app:layout_constraintVertical_bias="0.025"
+           tools:ignore="TouchTargetSizeCheck" />
+
+       <EditText
+           android:id="@+id/mobileet"
+           android:layout_width="157dp"
+           android:layout_height="42dp"
+           android:layout_marginTop="25dp"
+           android:ems="10"
+           android:hint="Mother's Mobile number"
+           android:inputType="textPersonName"
+           android:minHeight="48dp"
+           android:textAlignment="center"
+           android:textSize="14sp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="@+id/rchmother"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="@+id/rchmother"
+           app:layout_constraintTop_toBottomOf="@+id/rchmother"
+           app:layout_constraintVertical_bias="0.029"
+           tools:ignore="TouchTargetSizeCheck" />
+
+       <EditText
+           android:id="@+id/enrolldate"
+           android:layout_width="157dp"
+           android:layout_height="42dp"
+           android:layout_marginTop="25dp"
+           android:ems="10"
+           android:hint="enrollment date"
+           android:inputType="date"
+           android:minHeight="48dp"
+           android:textAlignment="center"
+           android:textSize="14sp"
+           app:layout_constraintEnd_toEndOf="@+id/mobileet"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="@+id/mobileet"
+           app:layout_constraintTop_toBottomOf="@+id/mobileet"
+           tools:ignore="TouchTargetSizeCheck" />
+
+       <EditText
+           android:id="@+id/csexet"
+           android:layout_width="157dp"
+           android:layout_height="42dp"
+           android:layout_marginTop="25dp"
+           android:ems="10"
+           android:hint="Child's sex"
+           android:inputType="textPersonName"
+           android:minHeight="48dp"
+           android:textAlignment="center"
+           android:textSize="14sp"
+           app:layout_constraintEnd_toEndOf="@+id/enrolldate"
+           app:layout_constraintHorizontal_bias="1.0"
+           app:layout_constraintStart_toStartOf="@+id/enrolldate"
+           app:layout_constraintTop_toBottomOf="@+id/enrolldate"
+           tools:ignore="TouchTargetSizeCheck" />
+
+       <EditText
+           android:id="@+id/dob"
+           android:layout_width="157dp"
+           android:layout_height="42dp"
+           android:layout_marginTop="25dp"
+           android:ems="10"
+           android:hint="child DOB"
+           android:inputType="date"
+           android:minHeight="48dp"
+           android:textAlignment="center"
+           android:textSize="14sp"
+           app:layout_constraintEnd_toEndOf="@+id/csexet"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="@+id/csexet"
+           app:layout_constraintTop_toBottomOf="@+id/csexet"
+           tools:ignore="TouchTargetSizeCheck" />
+
+       <EditText
+           android:id="@+id/bweight"
+           android:layout_width="157dp"
+           android:layout_height="42dp"
+           android:layout_marginTop="25dp"
+           android:ems="10"
+           android:hint="Child's birth weight"
+           android:inputType="numberDecimal"
+           android:textAlignment="center"
+           android:textSize="14sp"
+           app:layout_constraintEnd_toEndOf="@+id/dob"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="@+id/dob"
+           app:layout_constraintTop_toBottomOf="@+id/dob"
+           tools:ignore="TouchTargetSizeCheck" />
+
+       <EditText
+           android:id="@+id/dfacilityid"
+           android:layout_width="157dp"
+           android:layout_height="42dp"
+           android:layout_marginTop="25dp"
+           android:ems="10"
+           android:hint="Delivery Facilty ID"
+           android:inputType="textPersonName"
+           android:textAlignment="center"
+           android:textSize="14sp"
+           app:layout_constraintEnd_toEndOf="@+id/bweight"
+           app:layout_constraintStart_toStartOf="@+id/bweight"
+           app:layout_constraintTop_toBottomOf="@+id/bweight"
+           tools:ignore="TouchTargetSizeCheck" />
+
+       <EditText
+           android:id="@+id/rfacilityid"
+           android:layout_width="157dp"
+           android:layout_height="42dp"
+           android:layout_marginTop="25dp"
+           android:ems="10"
+           android:hint="Resident Facility ID"
+           android:inputType="textPersonName"
+           android:textAlignment="center"
+           android:textSize="14sp"
+           app:layout_constraintEnd_toEndOf="@+id/dfacilityid"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="@+id/dfacilityid"
+           app:layout_constraintTop_toBottomOf="@+id/dfacilityid"
+           tools:ignore="TouchTargetSizeCheck" />
+
+       <Button
+           android:id="@+id/newid"
+           android:layout_width="157dp"
+           android:layout_height="42dp"
+           android:layout_marginTop="30dp"
+           android:layout_marginBottom="50dp"
+           android:text="REGISTER"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.44"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/rfacilityid"
+           app:layout_constraintVertical_bias="1.0"
+           tools:ignore="TouchTargetSizeCheck" />
+
+       <TextView
+           android:id="@+id/textView13"
+           android:layout_width="134dp"
+           android:layout_height="39dp"
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginEnd="32dp"
+           android:text="Delivery Facility ID"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/textView3"
+           app:layout_constraintVertical_bias="0.01" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
+
